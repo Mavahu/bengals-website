@@ -1,18 +1,7 @@
 import React from 'react';
 import Image from 'next/future/image';
 import Link from 'next/dist/client/link';
-import AuroraPicture from '../images/aurora/aurora-1.JPG';
-
-const wuerfeJSON = [
-  {
-    name: 'Wurf D von X:X:X:X',
-    picture: AuroraPicture,
-    father: 'Bengalias Morpheus',
-    mother: 'GICh BenCo´s Amalja',
-    text: 'Im Wurf  war nur 1 Kitten. Diese Katze bleibt bei uns.',
-    link: 'wuerfe/a-wurf',
-  },
-];
+import { wuerfeJSON } from '../data/catsData';
 
 export default function wuerfe() {
   return (

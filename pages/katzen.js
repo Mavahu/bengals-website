@@ -1,32 +1,10 @@
 import Image from 'next/future/image';
-import AuroraPicture from '../images/aurora/aurora-1.JPG';
-import BarsaPicture from '../images/barsa/barsa-1.JPG';
-
-const catsData = [
-  {
-    name: 'Aurora',
-    picture: AuroraPicture,
-    birthdate: '07.04.2017',
-    color: 'braun (black) spotted tabby',
-    father: 'Ch Exotiquebengals Beast Mode',
-    mother: 'CACJ Amazongold Lubava of BenCo´s',
-    text: 'Amalja – ist unsere eigene Nachzucht.\nSie ist unsere Sternchen. Sie hat sehr schönen Show-Temperament. Sie ist liebevoll, freundlich und neugierig. Amalja hat warme Tonfarbe, schönes Kopf, kleine Ohren und gerades Profil. Sie trägt jetzt den Titel Gr. International Champion in erwachsene Klasse.',
-  },
-  {
-    name: 'Barsa',
-    picture: BarsaPicture,
-    birthdate: '07.04.2017',
-    color: 'braun (black) spotted tabby',
-    father: 'Ch Exotiquebengals Beast Mode',
-    mother: 'CACJ Amazongold Lubava of BenCo´s',
-    text: 'Amalja – ist unsere eigene Nachzucht.\nSie ist unsere Sternchen. Sie hat sehr schönen Show-Temperament. Sie ist liebevoll, freundlich und neugierig. Amalja hat warme Tonfarbe, schönes Kopf, kleine Ohren und gerades Profil. Sie trägt jetzt den Titel Gr. International Champion in erwachsene Klasse.',
-  },
-];
+import { femaleCats } from '../data/catsData';
 
 export default function Katzen() {
   return (
-    <div className="space-y-4">
-      {catsData.map((cat) => {
+    <div className="space-y-4 max-w-5xl">
+      {femaleCats.map((cat) => {
         return (
           <div
             key={cat.name}
