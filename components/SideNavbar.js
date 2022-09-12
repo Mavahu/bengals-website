@@ -34,12 +34,14 @@ export default function SideNavbar() {
               Kater
             </h3>
           </div>
-          <div className="flex  mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-            <FaRegComments className="text-2xl  group-hover:text-white " />
-            <h3 className="text-base  group-hover:text-white font-semibold ">
-              <Link href="/wuerfe">Würfe</Link>
-            </h3>
-          </div>
+          <Link href="/wuerfe">
+            <div className="flex  mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
+              <FaRegComments className="text-2xl  group-hover:text-white " />
+              <h3 className="text-base  group-hover:text-white font-semibold ">
+                Würfe
+              </h3>
+            </div>
+          </Link>
           <div className="flex  mb-2 justify-start items-center gap-4 pl-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
             <MdOutlineAnalytics className="text-2xl  group-hover:text-white " />
             <h3 className="text-base group-hover:text-white font-semibold ">

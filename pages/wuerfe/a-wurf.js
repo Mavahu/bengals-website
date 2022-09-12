@@ -1,7 +1,7 @@
 import React from 'react';
 import { wuerfA } from '../../data/catsData';
-import EinzelWurfLayout from '../../components/EinzelWurfDarstellung';
+import DetailedWurfDisplay from '../../components/DetailedWurfDisplay';
 
 export default function a_wurf() {
-  return <EinzelWurfLayout wurfDaten={wuerfA} />;
+  return <DetailedWurfDisplay wurfDaten={wuerfA} />;
 }
