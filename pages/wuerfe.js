@@ -8,7 +8,7 @@ export default function wuerfe() {
   return (
     <div className="space-y-4">
       {wuerfeJSON.map((wurf) => {
-        return <SingleWurfDisplay wurf={wurf} />;
+        return <SingleWurfDisplay key={wurf.name} wurf={wurf} />;
       })}
     </div>
   );
