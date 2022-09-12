@@ -29,7 +29,7 @@ export default function EinzelWurfLayout({ wurfDaten }) {
       <div className="text-3xl mt-8 mb-4">Kitten</div>
       {wurfDaten.kitten.map((kitten) => {
         return (
-          <div className="mb-4">
+          <div key={kitten.name} className="mb-4">
             <div className="flex flex-row items-center">
               <Image
                 className="w-[520px] rounded-3xl object-center aspect-video mr-4"
