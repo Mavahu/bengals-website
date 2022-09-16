@@ -6,7 +6,7 @@ import SingleWurfDisplay from '../components/SingleWurfDisplay';
 
 export default function wuerfe() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 min-w-[728px]">
       {wuerfeJSON.map((wurf) => {
         return <SingleWurfDisplay key={wurf.name} wurf={wurf} />;
       })}

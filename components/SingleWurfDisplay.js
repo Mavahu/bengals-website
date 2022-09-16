@@ -19,7 +19,7 @@ export default function SingleWurfDisplay({ wurf }) {
           <div>Mutter: {wurf.mother}</div>
           <div>{wurf.text}</div>
           <div className="p-4 bg-irish_coffee rounded-3xl max-w-fit text-amber-100 hover:text-white">
-            <Link href="/wuerfe/a-wurf"> Mehr Informationen</Link>
+            <Link href={wurf.link}> Mehr Informationen</Link>
           </div>
         </div>
       </div>
